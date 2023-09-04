@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>Simulador de Investimentos</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simulador de Investimentos</h1>
+        <div class="form-group">
+            <label>Valor Principal:</label>
+            <input type="number" id="principalAmount">
+        </div>
+        <div class="form-group">
+            <label>Taxa de Juros Anual (%):</label>
+            <input type="number" id="interestRate">
+        </div>
+        <div class="form-group">
+            <label>Número de Anos:</label>
+            <input type="number" id="numberOfYears">
+        </div>
+        <button onclick="calculateInvestment()" class="btn">Calcular</button>
+        <div class="result">
+            <p>O valor do seu investimento será de:</p>
+            <p id="totalAmount"></p>
+            <p>Você terá ganho:</p>
+            <p id="interestEarned"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
